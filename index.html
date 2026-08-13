@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">Devshop</h1>
+        <input type="text" id="barre-recherche" placeholder="Rechercher un produit ici...">
+        <button class="cart-ouvrir" id="cart-ouvrir">Panier(<span id="cart-count">0</span>)</button>
+    </header>
+    <main class="main">
+        <aside class="filtres">
+            <h2>Catégories</h2>
+            <div id="category-list"></div>
+        </aside>
+        <section class="products-area">
+            <div id="loader" class="loader hidden">Chargement des produits...</div>
+            <!-- Message d'erreur -->
+            <div id="error-message" class="error-hidden"></div>
+            <!-- Grille des produits -->
+             <div id="produits-grid" class="produits-grid"></div>
+        </section>
+    </main>
+    <!-- Tiroir pannier -->
+    <div id="cart-panier" class="cart-panier hidden">
+        <h2>Votre panier</h2>
+        <div id="cart-items"></div>
+        <p>Total produits: <span id="cart-total"></span></p>
+        <button id="cart-fermer">Fermer le panier</button>
+    </div> 
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
+
